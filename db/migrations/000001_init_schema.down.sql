@@ -1,0 +1,5 @@
+DROP TABLE IF EXISTS notifications;
+DROP TABLE IF EXISTS jobs;
+DROP TABLE IF EXISTS quotes;
+DROP TABLE IF EXISTS technicians;
+DROP TABLE IF EXISTS managers;
