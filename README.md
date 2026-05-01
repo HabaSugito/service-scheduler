@@ -33,6 +33,14 @@ DB_DSN="schedule:schedule@tcp(localhost:3306)/schedule_db?parseTime=true" go run
 
 ## API
 
+| Method | Path | Description |
+|--------|------|-------------|
+| GET | `/quotes?status=unscheduled` | List unassigned quotes |
+| POST | `/jobs` | Create job and assign quote to technician |
+| PATCH | `/jobs/:id/complete` | Mark job as completed |
+| GET | `/technicians/:id/notifications` | List technician notifications |
+| GET | `/managers/:id/notifications` | List manager notifications |
+
 ### GET /quotes?status=unscheduled
 
 Returns a list of unassigned quotes.
